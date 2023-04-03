@@ -1,1 +1,12 @@
-
+name: 'AWS Lightsail autoscaler'
+description: 'Scale your AWS Lightsail containers automatically with this Github Action'
+author: 'Peter van Doorn'
+inputs:
+  AWS-Access-Key:
+    description: 'Your AWS Access key. Can be passed in using {{ secrets.AWS_ACCESS_KEY }}'
+    required: true
+  AWS-Secret:
+    description: 'Your AWS Secret. Can be passed in using {{ secrets.AWS_SECRET }}'
+    required: true
+runs:
+  using: 'ubuntu-latest'
